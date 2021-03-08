@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scholarship Form</title>
+    <style>
+        body{
+            border: 5px solid rgb(0, 0, 0);
+            border-style: double;
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            margin: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+        legend{
+            font-size: large;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .button { 
+            height: 35px; 
+            width: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium; 
+        } 
+    </style>
+</head>
+<body>
+    <TABLE>
+    <TR>
+    <form action="scolarship.php" method="POST" target="_blank" autocomplete="on" novalidate>
+
+    <fieldset>
+        <center><h1><b><u>SCHOLARSHIP APPLICATION FORM</u></b><br><small></small></h1></center>
+    </fieldset><br><br>
+
+    <fieldset>
+
+        <legend><h3><U>PERSONAL INFORMATION</U></h3></legend>
+    
+    
+        <lable for="fname">First Name</lable>
+            <input type="text" id="fname" name="fname" required> &nbsp;
+        
+
+        <lable for="mname">Middle Name</lable>
+            <input type="text" id="mname" name="name" > &nbsp;
+        
+
+        <lable for="lname">Last Name</lable>
+            <input type="text" id="lname" name="lname" required>
+        <br>
+        <br>
+    
+        <lable for="dob">Date of Birth:</lable>
+            <input type="date" id="dob" name="dob" required>
+        <br>
+        <br>
+    
+        <lable for="age">Age:</lable>
+            <input  type="text" id="age" name="age" size="10" required>
+        <br>
+        <br>
+
+        <lable for="email">Email:</lable>
+            <input  type="text" id="email" name="email" size="50" required>
+        <br>
+        <br>
+
+        <lable for="cemail">Confirm Email:</lable>
+            <input  type="text" id="cemail" name="cemail" size="50" required>
+        <br>
+        <br>
+
+        <lable for="phonenumber">Phone Number:</lable> 
+            <input  type="number" id="phonenumber" name="phonenumber" size="30" required> &nbsp;
+        
+        <lable for="alternatephonenumber">Alternate Ph Number:</lable>
+            <input  type="number" id="altphonenumber" name="altphonenumber" size="30" srequired>
+        <br>
+        <br>
+
+        <lable for="gender">Gender:</lable><br><br>
+            <input type="radio" id="gender" name="gender">
+            <label for="male">Male</label><br>
+            <input type="radio" id="gender" name="gender">
+            <label for="female">Female</label><br>
+            <input type="radio" id="gender" name="gender">
+            <label for="others">Others</label><br>
+        <br>
+        <br>
+
+        <label for="coaddress">Address:</label><br>
+            <textarea name="coaddress" rows="10" cols="100"></textarea>
+        <br>
+        <br>
+
+        <label for ="pincode">Pin code:</label>
+            <input type="number" id="pincode" name="pincode"min="560001" max="560100" pattern="560[0-9]{3}" required>&nbsp;
+        <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>&nbsp;
+        <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+        <br>
+        <br>
+
+
+        <lable for="fathername">Father's Name</lable>
+            <input type="text" id="fathername" name="fathername" required>
+        <br>
+        <br>
+
+        <lable for="fathernumber">Father's Mobile Number:</lable>
+            <input type="nunumber" id="fathernumber" name="fathernumber" size="30" required>
+        <br>
+        <br>
+        
+        <lable for="fatherincome">Father's Annual Income(Between 10,000 and 3,00,000)</lable>
+            <input type="range" min="10000" max="300000" value="10000" id="fathernumber" name="fathernumber" required>
+        <br>
+        <br>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend><h3><U>EDUCATION</U></h3></legend>
+
+        <label for="cname">College Name:</label>
+            <input type="text" id="cname" name="cname" size="60" required>
+        <br>
+        <br>
+        
+        
+        <label for="address">College Address:</label><br>
+            <input type="text" id="address" name="address" placeholder="Address Line 1"size="100" required><br><br>
+            <input type="text" id="address" name="address" placeholder="Address Line 2"size="100"><br><br>
+            <input type="text" id="address" name="address" placeholder="Address Line 3"size="100"><br><br>
+            <input type="text" id="address" name="address" placeholder="Landmark" size="30"><br><br>
+        <label for ="pincode">Pin code:</label>
+            <input type="number" id="pincode" name="pincode"min="560001" max="560100" pattern="560[0-9]{3}" required>
+        <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Banglore" required>
+        <label for="state">State:</label>
+            <input type="text" id="state" name="state"placeholder="Karnataka" required>
+        <br>
+        <br>
+
+        <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" required>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend><h3><U>DOCUMENTATION</U></h3></legend>
+
+        <label for="file">Upload ADHAR CARD :</label>
+            <input type="file" id="file" name="file" required>
+        <br>
+        <br>
+
+        <label for="adharnumber">ADHAR Card Number</label>
+            <input type="number" id="adharnumber" name="adharnumber" size="100" required>
+        <br>
+        <br>
+
+        <label for="cadharnumber">Confirm ADHAR CARD Number</label>
+            <input type="number" id="cadharnumber" name="cadharnumber" size="40" required>
+        <br>
+        <br>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend><h3><U>CREDENTIALS</U></h3></legend>
+
+        <lable for="password">Enter Password:</lable>
+            <input type="password" id="password" name="password" required>
+        <br>
+        <br>
+
+        <label for="cpass">Confirm Password:</label>
+            <input type="password" id="cpass" name="cpass" required>
+        <br>
+        <br>
+        
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+
+            <input type="checkbox" id="accept" name="accept">       
+        <label for="term">By clicking I Accept, you confirm that you have read the terms and conditions, that you understand them and that you agree to be bound by them.</label><br>
+            
+           
+    </fieldset>
+    <br>
+
+            
+        <center><input type="submit" value="Submit" type="button" class="button" > &nbsp; &nbsp; <input type="reset" value="Clear" type="button" class="button"></center>
+        
+    </form>
+    </TR>
+    </TABLE>
+</body>
+</html>
